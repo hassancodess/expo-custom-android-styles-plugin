@@ -1,0 +1,23 @@
+{
+  "name": "expo-custom-android-styles-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@types/node": "^22.5.4",
+    "husky": "^9.1.5",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^8.0.8"
+  }
+}

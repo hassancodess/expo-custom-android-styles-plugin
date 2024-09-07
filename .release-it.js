@@ -13,9 +13,14 @@ module.exports = {
     tagArgs: ['-s'],
     assets: ['tar/*.tgz'],
   },
-  // npm: {
-  //   publish: true,
-  // },
+  npm: {
+    publish: false,
+  },
+  changelog: {
+    enabled: true,
+    label: 'changelog',
+    file: 'CHANGELOG.md',
+  },
   hooks: {
     'before:init': ['npm run lint'],
     'after:bump': 'npm build && npm tarball',

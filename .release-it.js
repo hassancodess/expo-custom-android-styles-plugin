@@ -17,7 +17,7 @@ module.exports = {
   //   publish: true,
   // },
   hooks: {
-    'before:init': ['npm lint'],
+    'before:init': ['npm run lint'],
     'after:bump': 'npm build && npm tarball',
     'after:release':
       'echo Successfully created a release v${version} for ${repo.repository}.',

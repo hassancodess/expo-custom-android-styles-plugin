@@ -1,1 +1,9 @@
-npx --no -- commitlint --edit $1
+echo ">> Validating your commit message format"
+
+if npm run commitlint > /dev/null 2>&1; then
+    echo ">> Your commit message looks great! 🎉"
+else
+    echo ">> Oops! Your commit message doesn't follow the conventional commit guidelines."
+    echo ">> Example: feat(user): add profile page"
+    exit 1 
+fi

@@ -1,1 +1,8 @@
-exit 1
+echo ">> Linting your files"
+
+if npm run lint; then
+    echo ">> Linting completed successfully! 🎉"
+else
+    echo ">> Oops! Linting failed. Please fix the linting issues before committing."
+    exit 1
+fi
